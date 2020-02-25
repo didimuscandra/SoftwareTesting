@@ -36,10 +36,22 @@ class Testing4 extends CI_Controller
         $this->unit->run($true,$expected,$test_name);
 
         $test_name = 'tes if else';
-        $this->unit->run($this->ifelse('tes','halo'),'tes',$test_name);
+        $this->unit->run($this->ifelse('candra','didimus'),'didimus',$test_name);
+
+        $test_name = 'tes if else 2';
+        $this->unit->run($this->ifelse2(null),'dia bukan teman saya',$test_name);
+
+        $test_name = 'tes if else 3';
+        $this->unit->run($this->ifelse3('didimus','candra','gased'),'didimus',$test_name);
+
+        $test_name = 'tes if else 4';
+        $this->unit->run($this->ifelse4('d'),'',$test_name);
+
+        $test_name = 'tes loop 1';
+        $this->unit->run($this->loop1(null),null,$test_name);
 
         $test_name = 'tes loop 2';
-        $arr = array(0,1,2,3,4);
+        $arr = array(1,1,1,1,1);
         $this->unit->run($this->loop2($arr),4,$test_name);
 
         echo $this->unit->report();
