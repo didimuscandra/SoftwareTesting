@@ -51,8 +51,8 @@ class Testing4 extends CI_Controller
         $this->unit->run($this->loop1(null),null,$test_name);
 
         $test_name = 'tes loop 2';
-        $arr = array(1,1,1,1,1);
-        $this->unit->run($this->loop2($arr),4,$test_name);
+        $arr = array();
+        $this->unit->run($this->loop2($arr),'',$test_name);
 
         echo $this->unit->report();
     }
