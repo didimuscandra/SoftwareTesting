@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Apr 21, 2020 at 04:58 AM
+-- Generation Time: Apr 21, 2020 at 05:04 AM
 -- Server version: 10.1.39-MariaDB
 -- PHP Version: 7.3.5
 
@@ -42,21 +42,7 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`product_id`, `name`, `price`, `image`, `description`, `expiredDate`) VALUES
-('5cb90329d0f13', 'Anggrek', 134000, 'default.jpg', 'Angrek adalah bunga dengan', '0000-00-00'),
-('5cb90737356f4', 'Melati', 412221, '5cb90737356f4.png', 'melati adalah bla bla bla', '0000-00-00'),
-('5e676e2b14b31', 'Kasur', 600000, 'default.jpg', 'Kasur Bagus!', '0000-00-00'),
-('5e676f425bf5c', 'Anggur Merah', 50000, 'default.jpg', 'Enak', '0000-00-00'),
-('5e67736823314', 'hhhh', 77777, 'default.jpg', '8888', '0000-00-00'),
-('5e6774a10b3c7', 'Anggur Merah', 50000, 'default.jpg', 'Enak', '0000-00-00'),
-('5e68947d800ff', '9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999993wwwww', 50000, 'default.jpg', 'Enak', '0000-00-00'),
-('5e689604283ff', '9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999993wwwww', 50000, 'default.jpg', 'Enak', '0000-00-00'),
-('5e689622d3c9f', 'Anggur', 1, 'default.jpg', 'Enak', '0000-00-00'),
-('5e6897db156f3', 'Anggur', 2147483647, 'default.jpg', 'Enak', '0000-00-00'),
-('5e6899b4b83b4', 'Anggur', 2147483647, 'default.jpg', 'Enak', '0000-00-00'),
-('5e69f94864178', '1', 50000, 'default.jpg', 'A', '0000-00-00'),
-('5e69fa7851c51', '1', 50000, 'default.jpg', 'A', '0000-00-00'),
-('5e6a01a7133f7', '1', 50000, 'default.jpg', 'Enak', '0000-00-00'),
-('5e6a01c0f3a2b', '1', 50000, 'default.jpg', 'Enak', '0000-00-00');
+('5e9e627c8c62b', 'Anggur', 15000, 'default.jpg', 'Anggur Segar dan enak!', '2020-04-30');
 
 -- --------------------------------------------------------
 
@@ -83,7 +69,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`user_id`, `username`, `password`, `email`, `full_name`, `phone`, `role`, `last_login`, `photo`, `created_at`, `is_active`) VALUES
-(1, 'dian', '$2y$10$TpipIS3PDfeHTJWggvnFO.eT/dVBMyVKI5OcYV1avGMnt8wTqOt5O', 'dian@petanikode.com', 'Ahmad Muhardian', '08123456789', 'admin', '2020-03-12 09:32:45', 'user_no_image.jpg', '2019-12-10 15:46:40', 1);
+(1, 'dian', '$2y$10$TpipIS3PDfeHTJWggvnFO.eT/dVBMyVKI5OcYV1avGMnt8wTqOt5O', 'dian@petanikode.com', 'Ahmad Muhardian', '08123456789', 'admin', '2020-04-21 03:01:20', 'user_no_image.jpg', '2019-12-10 15:46:40', 1);
 
 --
 -- Indexes for dumped tables
