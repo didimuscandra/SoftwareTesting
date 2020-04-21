@@ -9,7 +9,7 @@ class Product_model extends CI_Model
     public $price;
     public $image = "default.jpg";
     public $description;
-    public $expired_date;
+    public $expiredDate;
 
     public function rules()
     {
@@ -24,6 +24,10 @@ class Product_model extends CI_Model
             
             ['field' => 'description',
             'label' => 'Description',
+            'rules' => 'required'],
+
+            ['field' => 'expiredDate',
+            'label' => 'ExpiredDate',
             'rules' => 'required']
         ];
     }
@@ -46,7 +50,7 @@ class Product_model extends CI_Model
 		$this->price = $post["price"];
 		$this->image = $this->_uploadImage();
         $this->description = $post["description"];
-        $this->expired_date = $post["expired_date"];
+        $this->expiredDate = $post["expiredDate"];
         $this->db->insert($this->_table, $this);
     }
 
@@ -65,7 +69,7 @@ class Product_model extends CI_Model
 		}
 
         $this->description = $post["description"];
-        $this->expired_date = $post["expired_date"];
+        $this->expiredDate = $post["expiredDate"];
         $this->db->update($this->_table, $this, array('product_id' => $post['id']));
     }
 

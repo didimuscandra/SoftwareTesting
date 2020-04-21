@@ -52,7 +52,7 @@
 										<td class="small">
 											<?php echo substr($product->description, 0, 120) ?>...</td>
 										<td>
-											<?php echo $product->expired_date ?>
+											<?php echo $product->expiredDate ?>
 										</td>
 										<td width="250">
 											<a href="<?php echo site_url('admin/products/edit/'.$product->product_id) ?>"

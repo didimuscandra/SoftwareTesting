@@ -78,8 +78,8 @@
 
 							<div class="form-group">
 								<label for="name">Expired Date*</label>
-								<input class="form-control <?php echo form_error('expired_date') ? 'is-invalid':'' ?>"
-								 type="date" name="expired_date" />
+								<input class="form-control <?php echo form_error('expiredDate') ? 'is-invalid':'' ?>"
+								 type="date" name="expiredDate" />
 								<div class="invalid-feedback">
 									<?php echo form_error('name') ?>
 								</div>
